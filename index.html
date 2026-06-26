@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>GT Materiais de Construção</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+    <h1>GT Materiais</h1>
+    <span>Materiais de Construção</span>
+</div>
+
+<nav>
+    <a href="#inicio">Início</a>
+    <a href="#produtos">Produtos</a>
+    <a href="#contato">Contato</a>
+
+    <button id="darkMode">
+        <i class="fas fa-moon"></i>
+    </button>
+</nav>
+
+</header>
+
+<section id="inicio" class="hero">
+
+<div class="hero-content">
+<br><br><br><br><br><br>
+<h2>Tudo para sua obra em um só lugar</h2>
+
+<p>
+Qualidade, confiança e os melhores preços da região.
+</p>
+
+<a href="https://wa.me/554931911788" target="_blank" class="btn">
+Solicitar Orçamento
+</a>
+
+</div>
+
+</section>
+
+<section class="busca">
+
+<input
+type="text"
+id="pesquisa"
+placeholder="Pesquisar produto..."
+onkeyup="pesquisarProdutos()">
+
+</section>
+
+<section class="filtros">
+
+<button onclick="filtrar('todos')">Todos</button>
+<button onclick="filtrar('eletrica')">Elétrica</button>
+<button onclick="filtrar('hidraulica')">Hidráulica</button>
+<button onclick="filtrar('ferragens')">Ferragens</button>
+<button onclick="filtrar('ferramentas')">Ferramentas</button>
+<button onclick="filtrar('tintas')">Tintas</button>
+<button onclick="filtrar('promocoes')">Promoções</button>
+
+</section>
+
+<section id="produtos">
+
+<h2>Produtos</h2>
+
+<div id="listaProdutos" class="grid-produtos"></div>
+
+</section>
+<div class="botao-carrinho" onclick="toggleCarrinho()">
+    🛒
+</div>
+
+<div class="carrinho">
+
+<h3>
+🛒 Carrinho
+(<span id="contador">0</span>)
+</h3>
+
+<ul id="itensCarrinho"></ul>
+
+<button onclick="enviarWhatsApp()">
+Enviar Orçamento
+</button>
+
+</div>
+
+<section id="contato">
+
+<h2>Contato</h2>
+
+<p>WhatsApp: (49) 3191-1788</p>
+
+<a href="https://wa.me/554931911788" class="btn">
+Falar Agora
+</a>
+
+</section>
+
+<a
+href="https://wa.me/554931911788"
+class="whatsapp"
+target="_blank">
+
+<i class="fab fa-whatsapp"></i>
+
+</a>
+
+<script src="script.js"></script>
+
+</body>
+</html>
